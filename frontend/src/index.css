@@ -1,11 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  --brand-pink: #e91e63;
+  --brand-pink-dark: #c2185b;
+  --brand-pink-light: #fce4ec;
+  --brand-rose: #ad1457;
+
+  --brand-gold: #c9a227;
+  --brand-gold-light: #f5e6a8;
+
+  --brand-dark: #292929;
+  --brand-gray: #666666;
+  --brand-light-gray: #f7f7f7;
+
+  --white: #ffffff;
+  --black: #111111;
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
 
-  color: #292929;
-  background: #ffffff;
+  color: var(--brand-dark);
+  background: var(--white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -20,7 +42,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #ffffff;
+  background: var(--white);
 }
 
 button,
@@ -28,4 +50,18 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
